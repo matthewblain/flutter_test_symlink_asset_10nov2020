@@ -15,6 +15,10 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
 
+    // The title has not yet loaded.
+    // (Is this timing guaranteed? It's not really what I care about anyway.)
+    expect(find.text('Not Loaded'), findsOneWidget);
+
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);
@@ -26,5 +30,11 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+
+    await tester.pumpAndSettle();
+    // Verify that the title has loaded.
+    // Is this timing guaranteed? Seems to work even after the first pump.
+    expect(find.text('Not Loaded'), findsNothing);
+    expect(find.text('Asset based page title'), findsOneWidget);
   });
 }

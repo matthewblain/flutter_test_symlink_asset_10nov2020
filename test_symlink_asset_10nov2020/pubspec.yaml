@@ -45,7 +45,11 @@ flutter:
   uses-material-design: true
 
   # This app has one asset: a Page Title in a text file.
+  # It will not build the bundle on Windows if a symlink is used.
+  # Sometimes it will build the bundle if you give it the explicit filename
+  # Sometimes... not. I think I am going crazy!
   assets:
+    #- assets/page_title.txt
     - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see

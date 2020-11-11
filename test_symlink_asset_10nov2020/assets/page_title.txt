@@ -1,1 +1,1 @@
-Asset based page title
+../../shared_asset_pool/page_title.txt

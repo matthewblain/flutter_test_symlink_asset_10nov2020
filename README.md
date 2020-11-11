@@ -10,7 +10,7 @@ Steps used to create this project:
 4. Move the asset in the pubspec from an explicit filename to a wildcard.
 
 It should work perfectly everywhere, but on Windows there may be trouble.
-It turns out, this runs up to step 4. That is where it breaks.
+It turns out, this runs up to step 3 or 4. That is where it breaks.
 
 Broken: flutter build bundle
 

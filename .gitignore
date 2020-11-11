@@ -23,13 +23,13 @@
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-/build/
+test_symlink_asset_10nov2020/.dart_tool/
+test_symlink_asset_10nov2020/.flutter-plugins
+test_symlink_asset_10nov2020/.flutter-plugins-dependencies
+test_symlink_asset_10nov2020/.packages
+test_symlink_asset_10nov2020/.pub-cache/
+test_symlink_asset_10nov2020/.pub/
+test_symlink_asset_10nov2020/build/
 
 # Web related
 lib/generated_plugin_registrant.dart
